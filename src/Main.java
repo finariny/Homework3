@@ -20,7 +20,7 @@ public class Main {
         long secondValue = 987678965549L;
         float thirdValue = 2.786F;
         boolean fourthValue = false;
-        short fifthValue = 569;
+        char fifthValue = 569;
         short sixthValue = -159;
         int seventhValue = 27897;
         byte eighthValue = 67;
@@ -40,14 +40,18 @@ public class Main {
         int bottles = 16;
         int minute = 2;
         int bottlesPerMinute = bottles / minute;
-        int bottlesPerTwentyMinutes = bottlesPerMinute * 20;
-        System.out.println("За 20 минут машина произвела бутылок " + bottlesPerTwentyMinutes + " штук");
-        int bottlesPerDay = bottlesPerMinute * 1440; //60 минут * 24 = 1440
-        System.out.println("За сутки машина произвела бутылок " + bottlesPerDay + " штук");
-        int bottlesPerThreeDays = bottlesPerDay * 3;
-        System.out.println("За 3 дня машина произвела бутылок " + bottlesPerThreeDays + " штук");
-        int bottlesPerMonth = bottlesPerDay * 30;
-        System.out.println("За месяц машина произвела бутылок " + bottlesPerMonth + " штук");
+        int twentyMinutes = 20;
+        int bottlesPerTwentyMinutes = bottlesPerMinute * twentyMinutes;
+        System.out.println("За " + twentyMinutes + " минут машина произвела бутылок " + bottlesPerTwentyMinutes + " штук");
+        int minutesInDay = 60 * 24;
+        int bottlesPerDay = bottlesPerMinute * minutesInDay;
+        System.out.println("За " + minutesInDay + " минут машина произвела бутылок " + bottlesPerDay + " штук");
+        int minutesInThreeDays = minutesInDay * 3;
+        int bottlesPerThreeDays = bottlesPerMinute * minutesInThreeDays;
+        System.out.println("За " + minutesInThreeDays + " минут машина произвела бутылок " + bottlesPerThreeDays + " штук");
+        int minutesInMonth = minutesInDay * 30;
+        int bottlesPerMonth = bottlesPerMinute * minutesInMonth;
+        System.out.println("За " + minutesInMonth + " минут машина произвела бутылок " + bottlesPerMonth + " штук");
 
         //task 5
         System.out.println("Task 5");
