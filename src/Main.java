@@ -23,7 +23,7 @@ public class Main {
         short fifthValue = 569;
         short sixthValue = -159;
         int seventhValue = 27897;
-        double eighthValue = 67;
+        byte eighthValue = 67;
 
         //task 3
         System.out.println("Task 3");
